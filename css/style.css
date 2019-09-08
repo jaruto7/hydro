@@ -36,7 +36,7 @@ div.col-md-4 { padding: 0; }
 
 .glyphicon-search { top: 0; height: 46px; border-radius: 0; width: 50px; color: #777777; font-size: 20px; background-color: transparent; border: 1px solid #e6e6e6; }
 
-.login-register { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; text-transform: uppercase; font-weight: 700; font-size: 14px; margin-top: 24px; padding-right: 60px; font-family: "Andada", sans-serif; }
+.login-register { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; text-transform: uppercase; font-weight: 700; font-size: 14px; margin-top: 24px; padding-right: 130px; font-family: "Andada", sans-serif; }
 
 .yellow-line { display: block; }
 
@@ -58,10 +58,22 @@ div.col-md-4 { padding: 0; }
 
 .shopping-cart--icon { position: absolute; display: inline-block; background-image: url("../images/shopping_cart-icon.png"); height: 20px; width: 22px; }
 
-.badge { position: absolute; bottom: 76%; background-color: #044c7e; left: 21.6em; width: 13px; height: 13px; }
+.badge { position: absolute; bottom: 76%; background-color: #044c7e; left: 18.8em; width: 13px; height: 13px; }
 
 .shopping-cart__number { font-family: "Lato", sans-serif; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 6.1px; }
 
 .shopping-cart__title { position: relative; text-transform: uppercase; display: inline-block; font-family: "Lato", sans-serif; padding-left: 13px; bottom: 4px; }
 
-.shopping-cart--icon, .shopping-cart__title { position: relative; left: 16.4em; }
+.shopping-cart--icon, .shopping-cart__title { position: relative; left: 13.8em; }
+
+.shopping-cart--icon, .shopping-cart__title:hover { text-decoration: underline; }
+
+.hero { position: relative; background-image: url("../images/layer_29.png"); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px; }
+
+.hero__title { position: absolute; top: 139px; left: 400px; color: #fff; font-size: 48px; line-height: 50px; font-family: sans-serif; margin: 0; }
+
+.hero__button { position: absolute; bottom: 139px; left: 400px; width: 231px; height: 45px; border-radius: 10px; border-style: none; background-color: #ffc600; color: #000; font-size: 18px; font-weight: bold; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.hero__button:hover { color: #000; text-decoration: none; }
+
+.hero__arrow-icon { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; line-height: 1px; height: 15px; width: 5px; }
