@@ -1,0 +1,94 @@
+.offer {
+  background-color: #f0f2f1;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+.offer-info__list, .offer-second-info__list {
+  list-style: none;
+  margin: 0 auto;
+  width: 83%;
+}
+
+
+
+
+.offer-info__item  {
+  position: relative;
+  height: 46px;
+  width: 393px;
+  background-color: #044c7e;
+  margin-left: 10px;
+  margin-top: 41px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.offer-info__item::after {
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  content: "";
+  display: both;
+  width: 288px;
+  height: 235px;
+  background-color: #044c7e;
+  transform: rotate(30deg);
+}
+
+.offer-info--bar {
+  display: inline-block;
+  color: #044c7e;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
+  background-color: #fff;
+}
+
+.offer-info--bar:hover {
+  background-color: #ffc600;
+}
+
+// SECOND OFFER COLUMN
+
+.offer-second-info__item {
+  margin-left: 10px;
+  margin-top: 42px;
+  padding: 0;
+  height: 262px;
+  width: 393px;
+}
+
+.position-button {
+  display: flex;
+  justify-content: center;
+}
+
+.offer__button {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #044c7e;
+  color: #fff;
+  font-size: 18px;
+  line-height: 57px;
+  height: 45px;
+  width: 212px;
+  margin-top: 41px;
+  margin-bottom: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__button:hover {
+  color: #fff;
+}
+
+.offer__arrow-icon {
+  margin-left: 10px;
+}
+
+
+
