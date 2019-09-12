@@ -1,0 +1,51 @@
+// HERO SECTION
+
+.hero {
+  position: relative;
+  background-image: url("../images/layer_29.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.hero__title {
+  position: absolute;
+  top: 139px;
+  left: 400px;
+  color: #fff;
+  font-size: 48px;
+  line-height: 50px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.hero__button {
+  position: absolute;
+  bottom: 139px;
+  left: 400px;
+  width: 231px;
+  height: 45px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #ffc600;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__button:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.hero__arrow-icon {
+  display: flex;
+  align-items: center;
+  line-height: 1px;
+  height: 15px;
+  width: 5px;
+}
