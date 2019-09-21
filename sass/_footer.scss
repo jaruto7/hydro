@@ -1,0 +1,94 @@
+.footer {
+  height: 526px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.company-logo__image {
+  margin-top: 74px;
+}
+
+.footer-informative__title, .social-informative__title, .footer-informative__item, .social-informative__item, .footer-informative__item--top {
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.footer-informative__title, .social-informative__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #252123;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.footer-informative__item, .social-informative__item, .footer-informative__link, .footer-informative__item--top, .social-informative__paragraph {
+  color: #898888;
+  font-size: 15px;
+}
+
+.footer-informative__item--top {
+  padding-top: 15px;
+}
+
+.footer-informative__list, .social-informative__list {
+  padding: 0 0 0 5px;
+  list-style: none;
+}
+
+.footer-informative, .social-informative {
+  margin-top: 89px;
+}
+
+.footer-informative--line::before {
+  position: absolute;
+  content: '';
+  left: -30%;
+  top: 0; 
+  width: 1px;
+  height: 222px;
+  background-color: #dadada;
+}
+
+.social-informative::before {
+  position: absolute;
+  left: -10%;
+  top: 0; 
+  content: '';
+  width: 1px;
+  height: 222px;
+  background-color: #dadada;
+}
+
+.social-informative__paragraph {
+  display: inline-block;
+  padding-left: 15px;
+}
+
+// BANER LOGO SECTION
+
+.baner-logo {
+  margin-top: 29px;
+}
+
+.footer-header__list {
+  list-style: none;
+  margin-top: 80px;
+}
+
+.footer-header__item {
+  display: inline-block;
+  font-size: 13px;
+  border-left: 1px solid #898888;
+  padding: 0 10px 0;
+}
+
+.footer-header__item:nth-last-child(n+6) {
+  border-left: none;
+}
+
+.footer-header__link, .footer-maker__link {
+  color: #898888;
+  letter-spacing: 1px;
+}
