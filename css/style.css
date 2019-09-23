@@ -198,3 +198,7 @@ p.slider__paragraph--position-cable { top: 70%; left: 50%; }
 .footer-header__item:nth-last-child(n+6) { border-left: none; }
 
 .footer-header__link, .footer-maker__link { color: #898888; letter-spacing: 1px; }
+
+.product { height: 1571px; }
+
+.height-bar { height: 31px; box-shadow: 50px 50px 50px gray; background-color: red; }
