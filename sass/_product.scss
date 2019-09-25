@@ -55,8 +55,28 @@
 }
 
 .thumbnail--larger {
+  position: relative;
   height: 326px;
   width: 435px;
+}
+
+.thumbnail__zoom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.thumbnail__discount-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  left: 0;
+  background-color: #e22d2d;
+  height: 28px;
+  width: 50px;
 }
 
 .select-product {
