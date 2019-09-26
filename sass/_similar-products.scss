@@ -1,0 +1,92 @@
+.similar-products {
+  height: 586px;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+}
+
+.similar-products__title {
+  font-size: 30px;
+  color: #222222;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.similar-products__paragraph {
+  font-size: 16px;
+  color: #777777;
+  margin-bottom: 40px; 
+}
+
+.similar-products__list {
+  margin-left: 60px;
+  position: relative;
+}
+
+.similar-products__item {
+  border: 1px solid #e6e6e6;
+  height: 300px;
+  width: 292px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.similar-products--icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.similar-products__discount {
+  top: -56%;
+  right: 112%;
+  background-color: #e22d2d;
+  height: 28px;
+  width: 50px;
+}
+
+.similar-products__sale {
+  top: -56%;
+  right: 79%;
+  background-color: #ffc600;
+  height: 28px;
+  width: 100px;
+  text-transform: uppercase;
+}
+
+.thumbnail-similar-products__paragraph--name {
+  position: absolute;
+  top: 175%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #010101;
+  font-family: "Lato";
+  font-weight: 400;
+}
+
+.thumbnail-similar-products__paragraph--prize {
+  position: absolute;
+  top: 195%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.similar-products__highlight {
+  color: #044c7e;
+  font-family: "Lato";
+  font-weight: 700;
+}
+
+.similar-products--discount {
+  color: #a1a1a1;
+  text-decoration: line-through;
+}
