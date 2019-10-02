@@ -11,17 +11,39 @@ div.col-md-4 { padding: 0; }
 
 .navbar { background-color: #f8f8f8; height: 48px; margin: 0; }
 
-.social__list { list-style: none; line-height: 45px; }
+.social__list, .infos__list { list-style: none; line-height: 45px; }
+
+.social__item--support { font-size: 12px; font-family: "Lato"; font-weight: 300; border-right: 1px solid #dadada; margin-left: 16em; margin-right: 1px; padding-right: 1.1em; }
 
 .social__item--facebook { padding-right: 14px; padding-left: 199px; }
 
+.social__item.social__item--facebook.social__item--space { padding-left: 18px; }
+
 .navbar-collapse, .btn, .navbar-nav { padding: 0; }
+
+.navigation--category.navbar-collapse.collapse { border-bottom: 1px solid #dadada; max-height: 53px; }
+
+.navigation__item--second-btn { margin: -2px; }
 
 .envelope { padding: 12px 0 0 0; margin-right: 15px; height: 48px; width: 17px; }
 
-.dropdown__toggle-language { background-color: transparent; border-left: 1px solid #bbb; height: 48px; padding-left: 12px; width: 110px; }
+.dropdown__toggle-language { background-color: transparent; border-left: 1px solid #dadada; height: 48px; padding-left: 12px; width: 110px; }
 
-.dropdown-language { margin-right: 200px; font-family: "Lato"; }
+.infos__item { font-size: 12px; font-family: "Lato"; height: 48px; padding-left: 24px; border-left: 1px solid #dadada; margin-right: 24px; text-transform: uppercase; }
+
+.infos__item--faq { font-weight: 300; }
+
+.infos__item--account { font-weight: 900; margin: 0; }
+
+.dropdown-language { margin-right: 190px; font-family: "Lato"; }
+
+.dropdown__toggle-choose-category { background-color: #044c7e; color: #ffffff; height: 53px; width: 257px; font-family: "Lato"; font-weight: 400; text-transform: uppercase; }
+
+.dropdown-menu__list--category { width: 94%; }
+
+.dropdown__toggle-choose-category:hover { color: #fff; }
+
+.glyphicon-chevron-down-category { padding-left: 63px; }
 
 .glyphicon-chevron-down { font-size: 12px; font-weight: 400; }
 
@@ -49,6 +71,8 @@ div.col-md-4 { padding: 0; }
 
 .main-header { height: 53px; border-top: 1px solid #e6e6e6; padding-top: 19px; margin-top: 31px; }
 
+.main-header-category { padding: 0; }
+
 .navigation__list { margin-left: 201px; }
 
 .navigation__item { padding: 0 22px 0 0; font-family: "Lato", sans-serif; font-weight: 400; }
@@ -63,21 +87,33 @@ div.col-md-4 { padding: 0; }
 
 .shopping-cart__number { font-family: "Lato", sans-serif; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; height: 6.1px; }
 
+.account__link--shopping-icon { padding-left: 11px; }
+
 .shopping-cart__title { position: relative; text-transform: uppercase; display: inline-block; font-family: "Lato", sans-serif; padding-left: 13px; bottom: 4px; }
 
 .shopping-cart--icon, .shopping-cart__title { position: relative; left: 13.8em; }
 
 .shopping-cart--icon, .shopping-cart__title:hover { text-decoration: underline; }
 
-.hydro-logo2 { margin-left: 40px; }
+p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight: 300; }
+
+.hydro-logo2 { position: relative; margin-left: 40px; }
+
+.hydro-logo2__image2 { position: absolute; top: 95%; left: 55.5%; }
 
 .search-input-separate { padding-left: 60px; }
 
 .account.col-md-2 { width: 28%; padding: 0; }
 
-.account__image { line-height: 6px; }
+.account__image { line-height: 6px; padding-bottom: 6px; }
 
-.navigation__item--second { margin-right: 4px; padding: 0 22px 0 0; font-family: "Lato", sans-serif; font-weight: 400; text-transform: uppercase; }
+.account__link--favorite-icon { margin-left: 2.2em; }
+
+.navigation__item--second, .navigation__item--third { margin-right: 20px; padding: 0 22px 0 0; font-family: "Lato", sans-serif; font-weight: 400; text-transform: uppercase; }
+
+.navigation__item--third { line-height: 53px; }
+
+.navigation__link--category { color: #989898; }
 
 .account__title { display: inline-block; text-transform: uppercase; font-size: 14px; font-family: "Lato"; padding-left: 5px; font-weight: 700; color: #000000; line-height: 60px; }
 
@@ -88,6 +124,8 @@ div.col-md-4 { padding: 0; }
 .log-out--image { position: absolute; left: 51%; top: 0; }
 
 .log-out--link { padding-left: 50px; }
+
+.special-offer__title { position: relative; text-transform: uppercase; display: inline-block; font-family: "Lato", sans-serif; padding-left: 13px; bottom: 4px; color: #044c7e; margin-left: 80px; line-height: 58px; }
 
 .hero { position: relative; background-image: url("../images/layer_29.png"); background-position: center; background-size: cover; background-repeat: no-repeat; height: 500px; }
 

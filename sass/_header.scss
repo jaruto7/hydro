@@ -32,22 +32,45 @@ div.col-md-4 {
 }
 
 // Social icons
-.social__list {
+.social__list, .infos__list {
   list-style: none;
   line-height: 45px;
 }
 
 // FACEBOOK ICON
 
+.social__item--support {
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 300;
+  border-right: 1px solid #dadada;
+  margin-left: 16em;
+  margin-right: 1px;
+  padding-right: 1.1em;
+}
+
 .social__item--facebook {
   padding-right: 14px;
   padding-left: 199px;
+}
+
+.social__item.social__item--facebook.social__item--space {
+  padding-left: 18px;
 }
 
 .navbar-collapse,
 .btn,
 .navbar-nav {
   padding: 0;
+}
+
+.navigation--category.navbar-collapse.collapse {
+  border-bottom: 1px solid #dadada;
+  max-height: 53px;
+}
+
+.navigation__item--second-btn {
+  margin: -2px;
 }
 
 // ENVELOPE ICON
@@ -62,17 +85,59 @@ div.col-md-4 {
 // border-left in beetween two icons: envelope & dropdown language
 .dropdown__toggle-language {
   background-color: transparent;
-  border-left: 1px solid #bbb;
+  border-left: 1px solid #dadada;
   height: 48px;
   padding-left: 12px;
   width: 110px;
 }
 
+.infos__item {
+  font-size: 12px;
+  font-family: "Lato";
+  height: 48px;
+  padding-left: 24px;
+  border-left: 1px solid #dadada;
+  margin-right: 24px;
+  text-transform: uppercase;
+  // width: 110px;
+}
+
+.infos__item--faq {
+  font-weight: 300;
+}
+
+.infos__item--account {
+  font-weight: 900;
+  margin: 0;
+}
+
 // DROPDOWN LANGUAGE
 
 .dropdown-language {
-  margin-right: 200px;
+  margin-right: 190px;
   font-family: "Lato";
+}
+
+.dropdown__toggle-choose-category {
+  background-color: #044c7e;
+  color: #ffffff;
+  height: 53px;
+  width: 257px;
+  font-family: "Lato";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.dropdown-menu__list--category {
+  width: 94%;
+}
+
+.dropdown__toggle-choose-category:hover {
+  color: #fff;
+}
+
+.glyphicon-chevron-down-category {
+  padding-left: 63px;
 }
 
 .glyphicon-chevron-down {
@@ -170,6 +235,10 @@ div.col-md-4 {
   margin-top: 31px;
 }
 
+.main-header-category {
+  padding: 0;
+}
+
 .navigation__list {
   margin-left: 201px;
 }
@@ -215,6 +284,10 @@ div.col-md-4 {
   height: 6.1px;
 }
 
+.account__link--shopping-icon {
+  padding-left: 11px;
+}
+
 .shopping-cart__title {
   position: relative;
   text-transform: uppercase;
@@ -235,12 +308,24 @@ div.col-md-4 {
   text-decoration: underline;
 }
 
+p.account__title--prize-info {
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: 300;
+}
 
 // SECOND PRODUCTION PAGE
 // MY ACCOUNTS / ORDERS & LOGO
 
 .hydro-logo2 {
+  position: relative;
   margin-left: 40px;
+}
+
+.hydro-logo2__image2 {
+  position: absolute;
+  top: 95%;
+  left: 55.5%;
 }
 
 .search-input-separate {
@@ -254,14 +339,28 @@ div.col-md-4 {
 
 .account__image {
   line-height: 6px;
+  padding-bottom: 6px;
+  
 }
 
-.navigation__item--second {
-  margin-right: 4px;
+.account__link--favorite-icon {
+  margin-left: 2.2em;
+}
+
+.navigation__item--second, .navigation__item--third {
+  margin-right: 20px;
   padding: 0 22px 0 0;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.navigation__item--third {
+  line-height: 53px;
+}
+
+.navigation__link--category {
+  color: #989898;
 }
 
 .account__title {
@@ -295,4 +394,17 @@ div.col-md-4 {
 .log-out--link {
   padding-left: 50px;
 }
+
+.special-offer__title {
+  position: relative;
+  text-transform: uppercase;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  padding-left: 13px;
+  bottom: 4px;
+  color: #044c7e;
+  margin-left: 80px;
+  line-height: 58px;
+}
+
 
