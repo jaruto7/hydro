@@ -88,3 +88,23 @@ p.slider__paragraph--position-cable {
   align-items: center;
   margin: auto 8%;
 }
+
+@media(min-width: 768px) and (max-width: 991px) {
+  .slider__item {
+    width: 300px;
+  }
+
+  .slider__list.row {
+    left: 12.6%;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+  .slider__item {
+    width: 300px;
+  }
+
+  .slider__list.row {
+    left: 3.6%;
+  }
+}

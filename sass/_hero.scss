@@ -20,6 +20,10 @@
   margin: 0;
 }
 
+.hero__span--bold {
+  font-weight: bold;
+}
+
 .hero__button {
   position: absolute;
   bottom: 139px;
@@ -49,3 +53,17 @@
   height: 15px;
   width: 5px;
 }
+
+@media(min-width: 768px) and (max-width: 991px) {
+  .hero__title, .hero__button {
+    left: 60px;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+  .hero__title, .hero__button {
+    left: 100px;
+  }
+}
+
+

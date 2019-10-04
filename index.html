@@ -62,18 +62,19 @@
   <div class="header">
     <div class="row">
       <!-- HYDRO LOGO -->
-      <div class="hydro-logo  col-lg-4"><img class="hydro-image" src="images/hydro_logo.png" alt="logo firmy"></div>
+      <div class="hydro-logo  col-md-4"><img class="hydro-image" src="images/hydro_logo.png" alt="logo firmy"></div>
       <!-- INPUT SEARCH -->
-      <div class="search-input col-lg-4">
+      <div class="search-input col-md-4">
         <div class="input-group">
-          <input type="search" class="form-control" placeholder="Wpisz szukaną frazę">
+          <input type="search" class="form-control form-control--expand" placeholder="Wpisz szukaną frazę">
           <span class="input-group-btn input-group-btn-search">
                 <button class="btn glyphicon glyphicon-search" type="button"></button>
               </span>
         </div><!-- /input-group -->
-      </div><!-- /.col-lg-4 -->
+      </div><!-- /.col-md-4 -->
+
       <!-- LOGIN / REGISTER -->
-      <div class="login-register col-lg-4">
+      <div class="login-register col-md-4">
         <a href="#"><p class="login-register__title">Zaloguj / Zarejestruj
         się</p></a><span class="yellow-line"><img class="login-register-image" src="images/layer_27.png" alt="żółta linia"></span>
       </div>
@@ -85,11 +86,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <nav class="navigation collapse navbar-collapse">
       <ul class="navigation__list navbar-nav">
-        <li class="navigation__item cold-md-4"><a class="navigation__anhor" href="#">Strona Główna</a></li>
-        <li class="navigation__item cold-md-4"><a class="navigation__anhor" href="#">O firmie</a></li>
-        <li class="navigation__item cold-md-4"><a class="navigation__anhor" href="#">Oferta</a></li>
-        <li class="navigation__item cold-md-4"><a class="navigation__anhor" href="#">Produkcja</a></li>
-        <li class="navigation__item cold-md-4"><a class="navigation__anhor" href="#">Dlaczego My</a></li>
+        <li class="navigation__item cold-md-4"><a class="navigation__link" href="#">Strona Główna</a></li>
+        <li class="navigation__item cold-md-4"><a class="navigation__link" href="#">O firmie</a></li>
+        <li class="navigation__item cold-md-4"><a class="navigation__link" href="#">Oferta</a></li>
+        <li class="navigation__item cold-md-4"><a class="navigation__link" href="#">Produkcja</a></li>
+        <li class="navigation__item cold-md-4"><a class="navigation__link" href="#">Dlaczego My</a></li>
       </ul>
 
       <div class="shopping-cart navbar-right col-lg-4">
@@ -101,7 +102,7 @@
   <!-- HERO SECTION -->
 
   <div class="hero">
-    <h1 class="hero__title">Największy<br> dostawca hydrauliki<br> siłowej w Polsce</h1>
+    <h1 class="hero__title">Największy<br> <span class="hero__span--bold">dostawca hydrauliki<br> siłowej</span> w Polsce</h1>
     <p class="hero__button--title">
       <a href="#" class="button hero__button">Sprawdź naszą ofertę<span class="hero__arrow-icon glyphicon glyphicon-menu-right"></span></a>
     </p>
@@ -234,7 +235,7 @@
     </div>
   </section>
 
-  <!-- PROMOTION SECTION -->
+  <!-- OFFER SECTION -->
 
   <div class="offer container">
 
@@ -267,15 +268,15 @@
   <!-- NEWSLETTER SECTION -->
 
   <section class="newsletter">
-    <div class="row">
-      <div class="col-md-5">
+    <div class="newsletter row">
+      <div class="col-md-5 col-xs-6">
         <div class="input-group">
           <h2 class="newsletter__title">Zapisz się do newslettera</h2>
           <h6 class="newsletter__description">Raz w miesiącu wyślemy ci newsletter z najnowszymi promocjami</h6>
         </div><!-- /input-group -->
       </div><!-- /.col-md-6 -->
-      <div class="col-md-7">
-        <div class="input-group">
+      <div class="col-md-7 col-xs-13">
+        <div class="input-group input-group--input">
           <input class="newsletter__input" type="text" aria-label="..." placeholder="Twój adres email">
           <button class="newsletter__button">Zapisz się</button>
         </div><!-- /input-group -->
@@ -287,14 +288,14 @@
 
   <footer class="footer">
     <div class="company-informative row">
-      <div class="col-md-2 col-md-offset-2">
+      <div class="col-md-2 col-xs-12">
         <div class="company-logo input-group">
           <img src="images/hydro_logo.png" alt="logo firmy" class="company-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-6 -->
 
-      <div class="col-md-2">
-        <div class="footer-informative input-group">
+      <div class="col-md-4 col-xs-4">
+        <div class="footer-informative input-group footer-informative input-group--first">
           <ul class="footer-informative__list">
             <li class="footer-informative__item">ul. Strażacka 60</li>
             <li class="footer-informative__item">43-382 Bielsko Biała</li>
@@ -304,10 +305,10 @@
             <li class="footer-informative__item">REGON: 008093410</li>
           </ul>
         </div><!-- /input-group -->
-      </div><!-- /.col-md-6 -->
+      </div><!-- /.col-md-4 -->
 
-      <div class="col-md-1">
-        <div class="footer-informative footer-informative--line input-group">
+      <div class="col-md-1 col-xs-2">
+        <div class="footer-informative footer-informative--line footer-informative input-group--second input-group">
           <h2 class="footer-informative__title footer-informative__title--upercase">O firmie</h2>
           <ul class="footer-informative__list">
             <li class="footer-informative__item"><a href="" class="footer-informative__link">O nas</a></li>
@@ -318,8 +319,8 @@
         </div><!-- /input-group -->
       </div><!-- /.col-md-6 -->
 
-      <div class="col-md-1">
-        <div class="footer-informative input-group">
+      <div class="col-md-1 col-xs-2">
+        <div class="footer-informative input-group footer-informative input-group--third">
           <ul class="footer-informative__list">
             <li class="footer-informative__item"><a href="" class="footer-informative__link">Partnerzy</a></li>
             <li class="footer-informative__item"><a href="" class="footer-informative__link">Jakość</a></li>
@@ -329,8 +330,8 @@
         </div><!-- /input-group -->
       </div><!-- /.col-md-6 -->
 
-      <div class="col-md-2">
-        <div class="social-informative input-group">
+      <div class="col-md-2 col-xs-3">
+        <div class="social-informative input-group input-group--forth">
           <h2 class="social-informative__title social-informative__title--upercase">Pozostańmy w kontakcie</h2>
           <ul class="social-informative__list">
             <li class="social-informative__item">
@@ -350,55 +351,58 @@
     <!-- BANER LOGOS -->
   
     <div class="row">
-      <div class="col-md-1 col-md-offset-2">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/layer_52.png" alt="baner sponsora" class="baner-logo__link">
+          <img src="images/layer_52.png" alt="baner sponsora" class="baner-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
 
-      <div class="col-md-1">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/layer_57.png" alt="baner sponsora" class="baner-logo__link">
+          <img src="images/layer_57.png" alt="baner sponsora" class="baner-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
 
-      <div class="col-md-1">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/layer_58.png" alt="baner sponsora" class="baner-logo__link">
+          <img src="images/layer_58.png" alt="baner sponsora" class="baner-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
 
-      <div class="col-md-1">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/layer_58.png" alt="" class="baner-logo__link">
+          <img src="images/layer_58.png" alt="" class="baner-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
 
-      <div class="col-md-2">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/combined_logo-icons.png" alt="baner sponsora" class="baner-logo__link">
+          <img src="images/combined_logo-icons.png" alt="baner sponsora" class="baner-logo__image">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
 
-      <div class="col-md-1">
+      <div class="baner-logo-space">
         <div class="baner-logo input-group">
-          <img src="images/layer_64.png" alt="baner sponsora" class="baner-logo__link">
+          <img src="images/layer_64.png" alt="baner sponsora" class="baner-logo__image baner-logo__image--space">
         </div><!-- /input-group -->
       </div><!-- /.col-md-1 -->
     </div><!-- /.row -->
 
     <!-- HEADER INSIDE FOOTER -->
 
-    <div class="secondary-header container">
+    <div class="secondary-header container-fluid">
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="footer-header navbar-collapse">
-          <ul class="footer-header__list">
+        <nav class="footer-header navbar-collapse ">
+          <ul class="footer-header__list col-xs-7">
             <li class="footer-header__item"><a class="footer-header__link" href="#">Mapa strony</a></li>
             <li class="footer-header__item"><a class="footer-header__link" href="#">Polityka prywatności</a></li>
             <li class="footer-header__item"><a class="footer-header__link" href="#">Regulamin strony</a></li>
             <li class="footer-header__item"><a class="footer-header__link" href="#">RODO</a></li>
             <li class="footer-header__item"><a class="footer-header__link" href="#">OWS</a></li>
-            <li class="footer-maker__item navbar-right"><a href="#" class="footer-maker__link">Projekt i wykonanie: ITCENTER</a></li>
+          </ul>
+
+          <ul class="footer-header__list">
+              <li class="footer-maker__item navbar-right"><a href="#" class="footer-maker__link">Projekt i wykonanie: ITCENTER</a></li>
           </ul>
 
         </nav><!-- /.navigation-collapse -->
