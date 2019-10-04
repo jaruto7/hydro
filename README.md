@@ -2,9 +2,8 @@
 
 # Hydro project
 
-I would like to invite you to the: [main website](https://jaruto7.github.io/hydro/)
-Subpage : In progress...
-Second subpage: In progress...
+I would like to invite you to: [hydro website](https://jaruto7.github.io/hydro/)
+
 
 ## How to run website locally:
 
