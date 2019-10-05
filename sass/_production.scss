@@ -90,21 +90,28 @@ p.slider__paragraph--position-cable {
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
-  .slider__item {
-    width: 300px;
-  }
 
   .slider__list.row {
-    left: 12.6%;
+    width: 45%;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
 @media(min-width: 992px) and (max-width: 1199px) {
-  .slider__item {
-    width: 300px;
-  }
 
   .slider__list.row {
-    left: 3.6%;
+    width: 65%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media(min-width: 1200px) {
+
+  .slider__list.row {
+    width: 77.5%;
+    padding: 0;
+    margin: 0 auto;
   }
 }

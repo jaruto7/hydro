@@ -53,22 +53,10 @@
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
+  
   .about__list {
-    width: 60%;
-    margin-left: 11.8em;
-  }
-
-  .about__item, .about__image {
-    width: 335px;
-  }
-
-  .about__item {
-    height: 277px;
-  }
-
-  .about__image {
-    height: 237px;
-    width: 335px;
+    width: 78%;
+    margin: 0 auto;
   }
 
   .about__paragraph {
@@ -79,6 +67,6 @@
 @media(min-width: 992px) and (max-width: 1199px) {
   .about__list {
     width: 60%;
-    margin-left: 14em;
+    margin: 0 auto;
   }
 }

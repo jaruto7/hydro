@@ -2,17 +2,20 @@
   background-color: #f0f2f1;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  width: 100%;
 }
 
 .offer-info__list, .offer-second-info__list {
   list-style: none;
   margin: 0 auto;
-  width: 83%;
+  // width: 78%;
+  padding: 0;
+  left: 0; 
+  right: 0;
 }
 
 .offer-info__item  {
   position: relative;
+  
   height: 46px;
   width: 393px;
   background-color: #044c7e;
@@ -129,51 +132,56 @@
 
 @media(min-width: 992px) and (max-width: 1199px) {
   .offer-info__list, .offer-second-info__list {
-    margin-left: 5.4em;
+    // margin-left: 5.4em;
+    
   }
   
   .offer-info__item, .offer-second-info__item {
-    margin-left: 18px;
+    // margin-left: 18px;
   }
       
   .offer-info__item, .second-info__image {
-    width: 378px;
+    // width: 378px;
   }
     
   .offer-second-info__item {
-    width: 41.2%;
+    // width: 41.2%;
     height: 255px;
   }
 
   .offer-info__item::after {
-    left: 68%; 
+    left: 75%; 
   }
   
   .offer-info__item, .second-info__image {
-    width: 300px;
+    // width: 300px;
   }
 
   .offer-second-info__item {
-    width: 40.3%;
-    height: 203px;
+    // width: 37%;
+    height: 265px;
   }
 }
 
 @media(min-width: 1200px) {
-  .offer-info__list, .offer-second-info__list {
-    margin-left: 5.8em;
+  .offer.container {
+    width: 100%;
+  }
+  .offer-info__list.row, .offer-second-info__list {
+    // margin-left: 5.8em;
+    margin: 0 auto;
   }
   
   .offer-info__item, .offer-second-info__item {
-    margin-left: 30px;
+    // margin-left: 30px;
   }
   
   .offer-info__item, .second-info__image {
-    width: 378px;
+    // width: 378px;
   }
 
   .offer-second-info__item {
-    width: 30%;
+    // width: 30%;
     height: 255px;
   }
 }
