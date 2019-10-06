@@ -2,30 +2,32 @@
   background-color: #f0f2f1;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  width: 100%;
 }
 
 .offer-info__list, .offer-second-info__list {
   list-style: none;
-  margin: 0 auto;
-  // width: 78%;
-  padding: 0;
-  left: 0; 
-  right: 0;
+  padding: 0 8.9em;
+  // padding: 0;
+  margin: 0;
 }
 
-.offer-info__item  {
+.offer-info--space, .offer-second-info--space {
+  padding: 0;
+  background: lightgreen;
+}
+
+.offer-info__item--wrapper  {
   position: relative;
-  
   height: 46px;
-  width: 393px;
+  max-width: 393px;
   background-color: #044c7e;
-  margin-left: 10px;
-  margin-top: 41px;
+  margin: 41px auto 0;
   padding: 0;
   overflow: hidden;
 }
 
-.offer-info__item::after {
+.offer-info__item--wrapper::after {
   position: absolute;
   top: 100%;
   left: 75%;
@@ -51,18 +53,17 @@
   background-color: #ffc600;
 }
 
-.offer__link:hover {
+.offer-info__link:hover {
   text-decoration: none;
 }
 
 // SECOND OFFER COLUMN
 
-.offer-second-info__item {
-  margin-left: 10px;
-  margin-top: 42px;
+.offer-second-info__item--wrapper {
   padding: 0;
   height: 262px;
-  width: 393px;
+  max-width: 393px;
+  margin: 41px auto 0;
 }
 
 .position-button {
@@ -98,90 +99,81 @@
 //   left: 70%; 
 // }
 
-@media(min-width: 768px) and (max-width: 991px) {
-  .offer-info__list, .offer-second-info__list {
-    margin-left: 7.4em;
-  }
+// @media(min-width: 768px) and (max-width: 991px) {
+//   .offer-info__list, .offer-second-info__list {
+//     margin-left: 7.4em;
+//   }
   
-  .offer-info__item, .offer-second-info__item {
-    margin-left: 18px;
-  }
+//   .offer-info__item, .offer-second-info__item {
+//     margin-left: 18px;
+//   }
       
-  .offer-info__item, .second-info__image {
-    width: 378px;
-  }
+//   .offer-info__item, .offer-second-info__image {
+//     width: 378px;
+//   }
     
-  .offer-second-info__item {
-    width: 41.2%;
-    height: 255px;
-  }
+//   .offer-second-info__item {
+//     // width: 41.2%;
+//     height: 255px;
+//   }
 
-  .offer-info__item::after {
-    left: 68%; 
-  }
+//   .offer-info__item::after {
+//     left: 68%; 
+//   }
   
-  .offer-info__item, .second-info__image {
-    width: 300px;
-  }
+//   .offer-info__item, .offer-second-info__image {
+//     // width: 300px;
+//   }
 
-  .offer-second-info__item {
-    width: 40.3%;
-    height: 203px;
-  }
-}
+//   .offer-second-info__item {
+//     // width: 40.3%;
+//     // height: 203px;
+//   }
+// }
 
 @media(min-width: 992px) and (max-width: 1199px) {
+
   .offer-info__list, .offer-second-info__list {
-    // margin-left: 5.4em;
+    // flex-direction: column;
+    // align-items: center;
     
   }
-  
-  .offer-info__item, .offer-second-info__item {
-    // margin-left: 18px;
+
+  .offer-info__list, .offer-second-info__list {
+    // padding: 0 1.5em;
   }
+  
+  // .offer-info__item, .offer-second-info__item {
+  //   // width: 20%;
+  // }
       
-  .offer-info__item, .second-info__image {
-    // width: 378px;
-  }
+  // .offer-info__item, .offer-second-info__image {
+  //   width: 378px;
     
-  .offer-second-info__item {
-    // width: 41.2%;
-    height: 255px;
-  }
+  // }
+    
+  // .offer-second-info__item {
+  //   // width: 41.2%;
+  //   height: 255px;
+  // }
 
-  .offer-info__item::after {
-    left: 75%; 
-  }
+  // .offer-info__item::after {
+  //   left: 75%; 
+  // }
   
-  .offer-info__item, .second-info__image {
-    // width: 300px;
-  }
+  // .offer-info__item, .offer-second-info__image {
+  //   // width: 300px;
+    
+  // }
 
-  .offer-second-info__item {
-    // width: 37%;
-    height: 265px;
-  }
+  // .offer-second-info__item {
+    
+  //   // height: 265px;
+  // }
 }
 
 @media(min-width: 1200px) {
-  .offer.container {
-    width: 100%;
-  }
-  .offer-info__list.row, .offer-second-info__list {
-    // margin-left: 5.8em;
-    margin: 0 auto;
-  }
-  
-  .offer-info__item, .offer-second-info__item {
-    // margin-left: 30px;
-  }
-  
-  .offer-info__item, .second-info__image {
-    // width: 378px;
-  }
-
   .offer-second-info__item {
-    // width: 30%;
-    height: 255px;
+    // height: 255px;
   }
 }
