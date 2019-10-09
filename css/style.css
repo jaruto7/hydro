@@ -4,7 +4,7 @@ html { box-sizing: border-box; min-height: 100vh; }
 
 *, *::after, *::before { box-sizing: inherit; }
 
-body { width: 100%; margin: 0 auto; }
+body { max-width: 1599px; width: 100%; margin: 0 auto; }
 
 div.col-md-4 { padding: 0; }
 
@@ -217,19 +217,23 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 .carousel-inner { height: 200px; }
 
-.carousel-control { border-radius: 50%; height: 47px; width: 47px; background-color: #034b7d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: auto 17%; }
+.carousel-control { border-radius: 50%; height: 47px; width: 47px; background-color: #034b7d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: auto 16%; }
+
+@media (max-width: 767px) { .carousel-control { margin: auto 10%; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .carousel-control { margin: auto 6%; } }
+
+@media (min-width: 992px) and (max-width: 1199px) { .carousel-control { margin: auto 4%; } }
 
 .offer { background-color: #f0f2f1; font-family: "PT Sans", sans-serif; font-size: 20px; width: 100%; }
 
-.offer-info--space, .offer-second-info--space { padding: 0; }
+.offer .offer-info--space, .offer .offer-second-info--space { padding: 0 6.5px; }
 
-.offer-info__list, .offer-second-info__list { list-style: none; padding: 0 9.3em; margin: 0; }
+.offer-info__list, .offer-second-info__list { list-style: none; padding: 0; }
 
 .offer-info__item--wrapper::after { position: absolute; top: 100%; left: 75%; content: ""; display: both; width: 288px; height: 235px; background-color: #044c7e; transform: rotate(30deg); }
 
-.offer-info--space { margin: 0; padding: 0; }
-
-.offer-info__item--wrapper { position: relative; height: 46px; max-width: 393px; background-color: #044c7e; margin: 41px auto 0; padding: 0; overflow: hidden; }
+.offer-info__item--wrapper { position: relative; height: 46px; max-width: 393px; background-color: #044c7e; margin: 41px auto 0; overflow: hidden; }
 
 .offer .offer-info__link:hover { text-decoration: none; }
 
@@ -255,7 +259,9 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 @media (min-width: 992px) and (max-width: 1199px) { .offer-info__item--wrapper::after { left: 75%; } }
 
-@media (min-width: 1200px) and (max-width: 1350px) { .offer-info__item--wrapper::after { left: 69%; } }
+@media (min-width: 1200px) { .offer-info__item--wrapper::after { left: 69%; }
+  .offer-info__list, .offer-second-info__list { list-style: none; margin-right: 5em; }
+  .offer-info__item--wrapper::after { left: 73%; } }
 
 .newsletter { height: 169px; background-color: #13af99; color: #fff; font-family: "PT Sans", sans-serif; }
 

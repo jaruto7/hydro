@@ -110,11 +110,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto 17%;
+  margin: auto 16%;
 }
 
+@media(max-width: 767px) {
+  .carousel-control {
+    margin: auto 10%;
+  }
+}
 
-// .carousel.slide {
-//   // font-size: 0;
-  
-// }
+@media(min-width: 768px) and (max-width: 991px) {
+  .carousel-control {
+    margin: auto 6%;
+  }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+  .carousel-control {
+    margin: auto 4%;
+  }
+}
