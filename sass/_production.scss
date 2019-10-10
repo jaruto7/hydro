@@ -39,7 +39,7 @@
   &__item--space {
     // margin: 0 50px;
     // margin: 0 auto;
-    padding: 0 12.5px;
+    padding: 0 6px;
   }
 
   &__item--wrapper {
@@ -117,30 +117,35 @@
 
 @media(max-width: 767px) {
   .carousel-control {
-    margin: auto 10%;
+    margin: auto 0;
   }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
   .carousel-control {
-    margin: auto 6%;
+    margin: auto 0;
   }
 }
 
 @media(min-width: 992px) and (max-width: 1199px) {
   .carousel-control {
-    margin: auto 4%;
+    margin: auto 0;
   }
 }
 
 @media(min-width: 1200px) {
-  &__item--wrapper {
-    left: 100%;
+  .slider {
+    &__item--space {
+      width: 19.5%;
+    }
+
+    &__list {
+      position: relative;
+      left: 2.9em;
+    }
   }
 
-  &__list {
-    margin-right: 5em;
+  .carousel-control {
+    margin: auto 7%;
   }
-
-  
 }
