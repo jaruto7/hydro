@@ -3,7 +3,7 @@
   height: 403px;
   font-family: "PT Sans", sans-serif;
   background-image: url("../images/layer_22.png");
-  padding: 0;
+  // padding: 0;
   margin-top: 49px;
   width: 100%;
 
@@ -12,8 +12,8 @@
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 47px 0 0 0;
-    margin: 0;
+    // padding: 47px 0 0 0;
+    // margin: 0;
   }
 
   &__description {
@@ -28,22 +28,23 @@
   &__list {
     list-style: none;
     position: relative;
+    padding: 0;
     // margin: 0 16em 0 0;
     // width: 82.5%;
     // margin: 0 11em;
-    left: 3.8em;
-    margin-right: 10em;
+    // left: 3.8em;
+    // margin-right: 10em;
   }
 
   &__item--space {
     // margin: 0 50px;
     // margin: 0 auto;
-    // padding: 0 10em;
+    padding: 0 12.5px;
   }
 
   &__item--wrapper {
     height: 207px;
-    max-width: 253px;
+    max-width: 285px;
     background-color: #fff;
     border: 1px solid #f0f2f1;
     // margin-left: 20px;
@@ -51,6 +52,7 @@
     // padding-bottom: 40px;
     // padding-right: 250px;
     overflow: hidden;
+    
   }
 
   &__link {
@@ -110,7 +112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto 16%;
+  margin: auto 12%;
 }
 
 @media(max-width: 767px) {
@@ -129,4 +131,16 @@
   .carousel-control {
     margin: auto 4%;
   }
+}
+
+@media(min-width: 1200px) {
+  &__item--wrapper {
+    left: 100%;
+  }
+
+  &__list {
+    margin-right: 5em;
+  }
+
+  
 }
