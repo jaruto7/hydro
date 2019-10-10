@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Andada|Lato:300,400,700|PT+Sans:700|Raleway:700&display=swap");
 html { box-sizing: border-box; min-height: 100vh; }
 
@@ -181,7 +180,7 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 .about__list { padding: 0; list-style: none; }
 
-.about__item { height: 207px; max-width: 285px; border: 1px solid #f0f2f1; margin: 21px auto; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; overflow: hidden; }
+.about__item { height: 207px; max-width: 285px; border: 1px solid #f0f2f1; margin: 21px auto; overflow: hidden; }
 
 .about__link { height: 100%; width: 100%; }
 
@@ -193,15 +192,17 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 @media (min-width: 992px) and (max-width: 1200px) { .about__paragraph { font-size: 18px; } }
 
-.production { text-align: center; height: 403px; font-family: "PT Sans", sans-serif; background-image: url("../images/layer_22.png"); padding: 0; margin-top: 49px; width: 100%; }
+.production { text-align: center; height: 403px; font-family: "PT Sans", sans-serif; background-image: url("../images/layer_22.png"); margin-top: 49px; width: 100%; }
 
-.production__title { font-size: 20px; color: #ffffff; font-weight: bold; text-transform: uppercase; padding: 47px 0 0 0; margin: 0; }
+.production__title { font-size: 20px; color: #ffffff; font-weight: bold; text-transform: uppercase; }
 
 .production__description { color: #ffffff; font-size: 16px; margin-top: 15px; margin-bottom: 39px; }
 
-.slider__list { list-style: none; position: relative; left: 3.8em; margin-right: 10em; }
+.slider__list { list-style: none; position: relative; padding: 0; }
 
-.slider__item--wrapper { height: 207px; max-width: 253px; background-color: #fff; border: 1px solid #f0f2f1; margin: 0 auto; overflow: hidden; }
+.slider__item--space { padding: 0 12.5px; }
+
+.slider__item--wrapper { height: 207px; max-width: 285px; background-color: #fff; border: 1px solid #f0f2f1; margin: 0 auto; overflow: hidden; }
 
 .slider__link { height: 237px; width: 285px; }
 
@@ -217,7 +218,7 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 .carousel-inner { height: 200px; }
 
-.carousel-control { border-radius: 50%; height: 47px; width: 47px; background-color: #034b7d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: auto 16%; }
+.carousel-control { border-radius: 50%; height: 47px; width: 47px; background-color: #034b7d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: auto 12%; }
 
 @media (max-width: 767px) { .carousel-control { margin: auto 10%; } }
 
@@ -225,9 +226,12 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 @media (min-width: 992px) and (max-width: 1199px) { .carousel-control { margin: auto 4%; } }
 
+@media (min-width: 1200px) { __item--wrapper { left: 100%; }
+  __list { margin-right: 5em; } }
+
 .offer { background-color: #f0f2f1; font-family: "PT Sans", sans-serif; font-size: 20px; width: 100%; }
 
-.offer .offer-info--space, .offer .offer-second-info--space { padding: 0 6.5px; }
+.offer-info--space, .offer-second-info--space { padding: 0 6.5px; }
 
 .offer-info__list, .offer-second-info__list { list-style: none; padding: 0; }
 
@@ -235,33 +239,27 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 .offer-info__item--wrapper { position: relative; height: 46px; max-width: 393px; background-color: #044c7e; margin: 41px auto 0; overflow: hidden; }
 
-.offer .offer-info__link:hover { text-decoration: none; }
+.offer-info__link:hover { text-decoration: none; }
 
-.offer-info--bar { display: inline-block; color: #044c7e; height: 43px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 13px; background-color: #fff; }
+.offer-info--bar { display: inline-block; color: #044c7e; height: 43px; max-width: 393px; width: 100%; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; padding-left: 13px; background-color: #fff; }
 
 .offer-info--bar:hover { background-color: #ffc600; }
 
-.offer-second-info__item--wrapper { padding: 0; height: 262px; max-width: 393px; margin: 41px auto 0; }
+.offer-second-info__item--wrapper { height: 262px; margin: 41px auto 0; max-width: 393px; }
 
 .offer-second-info__image { max-width: 100%; height: auto; }
 
-.offer .offer-position { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+.offer-position { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
 
-.offer .offer-position__button { display: inline-block; border-radius: 10px; background-color: #044c7e; color: #fff; font-size: 18px; line-height: 57px; height: 45px; width: 212px; margin-top: 41px; margin-bottom: 34px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.offer-position__button { display: inline-block; border-radius: 10px; background-color: #044c7e; color: #fff; font-size: 18px; line-height: 57px; height: 45px; width: 212px; margin-top: 41px; margin-bottom: 34px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.offer .offer-position__button:hover { text-decoration: none; }
+.offer-position__button:hover { text-decoration: none; }
 
-.offer .offer-position__arrow-icon { margin-left: 10px; }
+.offer-position__arrow-icon { margin-left: 10px; }
 
-@media (max-width: 767px) { .offer-info__item--wrapper::after { left: 73%; } }
-
-@media (min-width:  768px) and (max-width: 991px) { .offer-info__item--wrapper::after { left: 69%; } }
-
-@media (min-width: 992px) and (max-width: 1199px) { .offer-info__item--wrapper::after { left: 75%; } }
-
-@media (min-width: 1200px) { .offer-info__item--wrapper::after { left: 69%; }
-  .offer-info__list, .offer-second-info__list { list-style: none; margin-right: 5em; }
-  .offer-info__item--wrapper::after { left: 73%; } }
+@media (min-width: 1200px) { .offer-info__item--wrapper::after { left: 75%; }
+  .offer-info--space, .offer-second-info--space { width: 26%; }
+  .offer-info__list, .offer-second-info__list { position: relative; right: 4.5em; } }
 
 .newsletter { height: 169px; background-color: #13af99; color: #fff; font-family: "PT Sans", sans-serif; }
 
