@@ -277,13 +277,22 @@ p.account__title--prize-info { font-size: 12px; font-family: "Lato"; font-weight
 
 .newsletter__button { background-color: #044c7e; border: none; height: 41px; text-transform: uppercase; width: 128px; margin-right: 20px; }
 
-@media (min-width: 768px) and (max-width: 991px) { .newsletter__title { margin: 66px 0 6px 0; font-size: 2.1rem; }
-  .newsletter__description { margin-left: 0; font-size: 1.2rem; }
-  .newsletter__input { width: 134px; } }
+@media (max-width: 767px) { .newsletter__title { margin: 16px 0 6px 0; font-size: 2.1rem; }
+  .newsletter__description { font-size: 1.2rem; margin: 0; }
+  .newsletter__input { width: 195px; margin: 45px 0 0 0; }
+  .newsletter__button { width: 68px; margin-right: 20px; font-size: 1.2rem; } }
+
+@media (min-width: 768px) and (max-width: 991px) { .newsletter__title { margin-left: 15px; font-size: 2.1rem; }
+  .newsletter__description { margin-left: 15px; font-size: 1.1rem; }
+  .newsletter__input { width: 187px; }
+  .newsletter__button { width: 68px; margin-right: 20px; font-size: 1.2rem; } }
 
 @media (min-width: 992px) and (max-width: 1199px) { .newsletter__title { margin: 66px 0 6px 30px; font-size: 2.7rem; }
   .newsletter__description { margin-left: 30px; font-size: 1.2rem; }
-  .newsletter__input { width: 282px; } }
+  .newsletter__input { width: 215px; } }
+
+@media (min-width: 1200px) { .newsletter__title { margin: 66px 0 6px 50px; font-size: 3rem; }
+  .newsletter__description { margin-left: 50px; font-size: 1.4rem; } }
 
 .footer { height: 526px; font-family: "PT Sans", sans-serif; }
 
